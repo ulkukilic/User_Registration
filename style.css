@@ -1,0 +1,94 @@
+/* style.css */
+
+/* Temel reset ve font ayarı */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Form konteyneri */
+.container {
+  background: #ffffff;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Başlık ve açıklama */
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+.container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Ortak label stili */
+.container label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Input alanları */
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5da;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+/* Input:focus efekti */
+.container input:focus {
+  outline: none;
+  border-color: #0366d6;
+  box-shadow: 0 0 5px rgba(3,102,214,0.3);
+}
+
+/* Gönder butonu */
+.container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #0366d6;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+/* Buton hover */
+.container input[type="submit"]:hover {
+  background: #0356b6;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+    margin: 0 15px;
+  }
+}

@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registiration Form</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <div>
+ <?php>
+  if(isset($_POST['create'])){
+    echo 'user submitted';
+  }
+ ?>
+
+  </div>
      <div>
         <form action="registiration.php" method="post">
           <div class="container">
@@ -25,6 +35,8 @@
             
             <label for="password"><b>password</b></label>
             <input type="password" name="password"  required>
+          
+            <input type="submit"  name='create' value="Sign Up">
           </div>
         </form>
      </div>
