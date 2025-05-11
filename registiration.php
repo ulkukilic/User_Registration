@@ -20,6 +20,8 @@ require_once('config.php');
          $email = $_POST['email'];
          $phonenumber = $_POST['phonenumber'];
         $password = $_POST['password'];
+        $sql='INSERT INTO users ( firstname,lastname, email, phonenumber, password') values (?,?,?,?,?);
+        
         echo $firstname . $lastname . $email . $phonenumber . $password ;
     }
   ?>
